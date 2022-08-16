@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p class="abc">Hello</p>
+    <p class="abc">hii</p>
+    <p class="abc">Byy</p>
+    <p class="abc">Take care</p>
+    <p class="abc">good night</p>
+
+    <ul id="list">
+        <li>like1</li>
+        <li>Love</li>
+        <li>care</li>
+    </ul>
+
+    <!-- add style in the html through javascript -->
+    <script>
+        document.getElementById('list').setAttribute("style",
+        " color:red;background-color:black;height:100px;width:100%"
+        )
+    </script>
+
+    <!-- add more list into existing one -->
+    <!-- <script>
+        var li = document.querySelector('ul');
+        console.log(li);
+        
+        var newList = document.createElement('li');
+        var textNode = document.createTextNode('new list item');
+        newList.appendChild(textNode);
+        document.li.appendChild(newList);
+    </script> -->
+
+    <!-- accessing element by class name -->
+    <script>
+        var a = document.getElementsByClassName('abc')[0].innerHTML;
+        document.write(a);
+    </script>
+
+    <!-- access element by tag name -->
+    <script>
+        var b = document.getElementsByTagName('p')[0].innerHTML;
+        document.write(b);
+    </script>
+
+    <!-- access elements with query selector -->
+    <script>
+        var c = document.querySelector('p').innerHTML;
+        document.write(c);
+    </script>
+
+    <!-- add element dynamically  -->
+    <script>
+        var a = document.createElement('h1');
+        var b = document.createTextNode('This is dynamically generated h1');
+        a.appendChild(b);
+        console.log(a);
+        document.body.appendChild(a);
+
+        var p = document.createElement('p');
+        var textNode = document.createTextNode("hello dynamic para");
+        p.appendChild(textNode);
+        document.body.appendChild(p);
+
+        var h3 = document.createElement('h3');
+        var textNode = document.createTextNode("hello h3 , your are born from javascript");
+        h3.appendChild(textNode);
+        document.body.appendChild(h3);
+    </script>
+    <script>
+        var list = document.querySelector('ul');
+        document.write(list);
+        console.log(list);
+    </script>
+</body>
+</html>

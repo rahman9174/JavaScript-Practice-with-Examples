@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let blogs=[
+        //     {title:"Technologis to be learn for future",likes : 100},
+        //     {title:"Must have to knowledge about these things in IT",likes:500}
+        // ]
+        // console.log(blogs);
+        let user = {
+            name : 'Rahman',
+            age : 25,
+            email : 'mutiurrahman.khan@alstomgroup.com',
+            location : 'India',
+            blogs : [ 
+            {title:"Technologis to be learn for future",likes : 100},
+            {title:"Must have to knowledge about these things in IT",likes:500}
+            ],
+            login : function(){
+                console.log("hey you are successfully login");
+
+            },
+            logout : function(){
+                console.log("hey you are logout");
+            },
+            logBlogs : function(){
+                console.log("this user has written following blogs");
+                this.blogs.forEach(blogs=>{
+                    console.log('blogs.title : ',blogs.title,' and  likes : ',blogs.likes);
+                    // console.log()
+
+                })
+            }
+        }  
+        user.logBlogs();
+        user.login();
+        user.logout();
+        console.log(user.email);
+        console.log(user.name);
+        console.log(user.location);
+        console.log(user.age);
+        
+    </script>
+</body>
+</html>

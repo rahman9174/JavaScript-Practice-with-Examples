@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="divOne">
+        div one content is here.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas exercitationem sint hic tempora repellat fugit, temporibus nostrum neque unde. Expedita voluptatibus deleniti perferendis aspernatur! Cumque incidunt, molestiae sint possimus enim molestias ipsa itaque magni. Minus, illum! Eos praesentium velit aperiam quasi similique nam, rerum ut porro esse perferendis eius quam voluptas, exercitationem cum minima ipsam incidunt dolor eligendi impedit consequuntur eaque ullam, qui et. Enim, quos. Autem impedit quo architecto quae, at omnis ab amet voluptates quia laboriosam! Laborum, accusantium et aut unde perferendis nemo inventore at enim ad excepturi nesciunt provident nobis culpa voluptas laudantium dolorum fugiat natus ipsa.
+        <br>
+        <button onclick="copyFunction('divOne')">copy this content</button>
+    </div>
+    <div id="divTwo">
+        div two content is here. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam alias natus voluptates numquam corrupti aliquid aperiam expedita sed. Animi quos beatae officia. Quas delectus ipsum aspernatur iure libero iste consectetur id fugit quasi voluptates recusandae ad veritatis explicabo aliquid, ut odio nihil similique doloremque sunt neque qui mollitia sed impedit adipisci! Nam vitae nostrum quod necessitatibus nesciunt fuga impedit atque earum? Sit eligendi temporibus consectetur consequuntur alias autem nemo. Doloribus sapiente, eius incidunt ea odit dolores voluptatibus eum saepe unde est, mollitia consequuntur culpa, eaque vero. Voluptates quidem atque quos ullam cupiditate. Ullam, nam obcaecati cumque consequatur est unde optio?
+        <br>
+        <button onclick="copyFunction('divTwo')">copy this content</button>
+    </div>
+
+    <script>
+        function copyFunction(parameter){
+            var backup = document.body.innerHTML;
+            var divconten = document.getElementById(parameter).innerHTML;
+            document.body.innerHTML = divconten;
+            window.print();
+            document.body.innerHTML = backup;
+        }
+    </script>
+</body>
+</html>
